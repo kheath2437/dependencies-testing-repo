@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "lockFileMaintenance": { "enabled": true },
+  "packageRules": [
+    {
+      "matchPackageNames": ["docker-api"],
+      "matchUpdateTypes": ["minor","patch"],
+      "rangeStrategy": "in-range-only"
+    }
+  ]
+}
